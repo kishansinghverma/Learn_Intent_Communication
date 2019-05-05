@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
                 intent.putExtra("Roll_No", 1234);
                 intent.putExtra("Name", "Kishan");
                 intent.putExtra("IsHostler", false);
-                intent.putExtra("Age", 21.7);
+                intent.putExtra("Age", (float)21.7);
                 intent.putExtra("Subjects", subject);
                 intent.putExtra("Friends", friends);
                 startActivity(intent);
