@@ -23,17 +23,21 @@ public class Next extends AppCompatActivity {
         Boolean isHostler=intent.getBooleanExtra("IsHostler", false);
         float age=intent.getFloatExtra("Age", 0);
         String[] subject_Array=intent.getStringArrayExtra("Subjects");
+        int[] marks_array=intent.getIntArrayExtra("Marks");
 
         String subject=new String();
         String friends=new String();
 
+        int i=0;
         for(String x: subject_Array)
         {
             subject += "\n";
             subject += x;
+            subject += (" "+marks_array[i++]);
         }
 
         Iterator<String> loop=friends_list.iterator();
+
         while (loop.hasNext())
         {
             friends += "\n";

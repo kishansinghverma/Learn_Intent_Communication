@@ -33,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
                 intent.putExtra("Age", (float)21.7);
                 intent.putExtra("Subjects", subject);
                 intent.putExtra("Friends", friends);
+                intent.putExtra("Marks", new int[]{20,30,40,50});
                 startActivity(intent);
             }
         });
